@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:kotlin-api-dev
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    properties:
+      hipernate-dialect: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
